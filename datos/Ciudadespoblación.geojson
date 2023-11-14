@@ -1,0 +1,12 @@
+{"type":"FeatureCollection", "features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-99.133208,19.4326077,0]},"properties":{"name":"Ciudad de México","description":"descripción: 9209944<br>Población: 9209944","descripción":"9209944","Población":"9209944.0"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.0382471,32.5149469,0]},"properties":{"name":"Tijuana","description":"descripción: 1810645<br>Población: 1810645","descripción":"1810645","Población":"1810645.0"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-99.0365112,19.6057728,0]},"properties":{"name":"Ecatepec de Morelos","description":"descripción: 1643623<br>Población: 1643623","descripción":"1643623","Población":"1643623.0"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-101.6859605,21.1250077,0]},"properties":{"name":"León de los Aldama","description":"descripción: 1579803<br>Población: 1579803","descripción":"1579803","Población":"1579803.0"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-98.2062727,19.0414398,0]},"properties":{"name":"Heroica Puebla de Zaragoza","description":"descripción: 1542232<br>Población: 1542232","descripción":"1542232","Población":"1542232.0"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-106.4245478,31.6903638,0]},"properties":{"name":"Juárez","description":"descripción: 1501551<br>Población: 1501551","descripción":"1501551","Población":"1501551.0"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-103.3473385,20.6751707,0]},"properties":{"name":"Guadalajara","description":"descripción: 1385621<br>Población: 1385621","descripción":"1385621","Población":"1385621.0"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-103.416501,20.6719563,0]},"properties":{"name":"Zapopan","description":"descripción: 1257547<br>Población: 1257547","descripción":"1257547","Población":"1257547.0"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-100.3161126,25.6866142,0]},"properties":{"name":"Monterrey","description":"descripción: 1142952<br>Población: 1142952","descripción":"1142952","Población":"1142952.0"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-98.9896643,19.3994934,0]},"properties":{"name":"Ciudad Nezahualcóyotl","description":"descripción: 1072676<br>Población: 1072676","descripción":"1072676","Población":"1072676.0"}}
+]}
