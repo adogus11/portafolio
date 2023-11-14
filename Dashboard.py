@@ -31,7 +31,7 @@ external_stylesheets = [
     }
 ]
 app = Dash("Mexpob", external_stylesheets=external_stylesheets)
-
+server = app.server
 
 # In[21]:
 
