@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[538]:
+# In[18]:
 
 
 import numpy as np
@@ -10,7 +10,7 @@ import pandas as pd
 import json
 
 
-# In[539]:
+# In[19]:
 
 
 import plotly.express as px
@@ -18,7 +18,7 @@ from dash import Dash, dcc, html
 from dash.dependencies import Input, Output
 
 
-# In[540]:
+# In[20]:
 
 
 external_stylesheets = [
@@ -33,22 +33,24 @@ external_stylesheets = [
 app = Dash("Mexpob", external_stylesheets=external_stylesheets)
 
 
-# In[541]:
+# In[21]:
 
 
-ruta_shapefile = "datos/INEGI_Estatal_.shp"
-gdf = gpd.read_file(ruta_shapefile)
+url1= 'https://raw.githubusercontent.com/adogus11/portafolio/main/datos/estadospob.geojson'
+gdf = gpd.read_file(url1)
 nuevos_nombres = {'POB': 'Population', 'ALF': 'Illiterate rate', 'DMP': 'Unemployment rate',
                    'HXV':'Average number of people per household', 'AGE':'Average age'}
 gdf = gdf.rename(columns=nuevos_nombres)
-gdfp = gpd.read_file("datos/Ciudadespoblación.geojson")
+url2= 'https://raw.githubusercontent.com/adogus11/portafolio/main/datos/Ciudadespoblaci%C3%B3n.geojson'
+gdfp = gpd.read_file(url2)
 gdfp['Población'] = gdfp['Población'].astype(float)
 
 
-# In[542]:
+# In[22]:
 
 
-df= pd.read_csv("datos/IDB.csv")
+url3 = 'https://raw.githubusercontent.com/adogus11/portafolio/main/datos/IDB.csv'
+df= pd.read_csv(url3)
 df= df.dropna()
 df = df.replace('..', np.nan)
 df_w = df.pivot(index=['Country Name', 'Country Code'], columns='Series Code', values='2019 [YR2019]')
@@ -66,7 +68,7 @@ nuevos_nombres_w = {'SP.POP.TOTL': 'Population', 'SL.UEM.TOTL.NE.ZS': 'Unemploym
 df_w1 = df_w1.rename(columns=nuevos_nombres_w)
 
 
-# In[543]:
+# In[23]:
 
 
 app.layout = html.Div (children=[
@@ -182,7 +184,7 @@ def update(op_slt,op_slt1):
     return container, fig, container1, fig1, fig2
 
 
-# In[544]:
+# In[24]:
 
 
 app.run(jupyter_mode="external")
