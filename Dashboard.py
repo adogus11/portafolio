@@ -188,7 +188,7 @@ def update(op_slt,op_slt1):
 
 
 if __name__ == 'Mexpob':
-    app.run(host='0.0.0.0', port=10000)
+    app.run_server(debug=True)
 
 
 # In[ ]:
