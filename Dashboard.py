@@ -187,7 +187,8 @@ def update(op_slt,op_slt1):
 # In[24]:
 
 
-app.run(jupyter_mode="external")
+if __name__ == 'Mexpob':
+    app.run(host='0.0.0.0', port=10000)
 
 
 # In[ ]:
