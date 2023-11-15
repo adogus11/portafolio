@@ -36,7 +36,7 @@ server = app.server
 # In[21]:
 
 
-url1= 'https://raw.githubusercontent.com/adogus11/portafolio/main/datos/estadospob.geojson'
+url1= 'https://raw.githubusercontent.com/adogus11/portafolio/main/datos/estadospob1.geojson'
 gdf = gpd.read_file(url1)
 nuevos_nombres = {'POB': 'Population', 'ALF': 'Illiterate rate', 'DMP': 'Unemployment rate',
                    'HXV':'Average number of people per household', 'AGE':'Average age'}
